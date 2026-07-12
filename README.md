@@ -1,6 +1,10 @@
 <div align="center">
 
-# Hi there, I'm JOJO 👋
+<img
+  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/typing-header.svg"
+  alt="Hi there, I'm Hanchen Qiu"
+  width="760"
+/>
 
 ### Software Engineering Student · AI Agent R&D Engineer Intern
 
@@ -13,16 +17,12 @@
   </a>
 </p>
 
-> Building agents that can understand, retrieve, reason, and act.
-
 </div>
 
-## `> whoami`
+## 👨‍💻 `> whoami`
 
 - 🎓 Studying **Software Engineering** at the **School of Software, Southeast University**
 - 💼 AI Agent R&D Engineer Intern at **Alibaba Taobao & Tmall Group**
-- 🤖 Exploring how intelligent agents learn to use tools and interact with real-world interfaces
-- ✍️ Sharing ideas and notes on my [Blog](https://mp.weixin.qq.com/s/hcgKahtQRE2QqI6xplv2Rg)
 
 ## 🔬 Research Interests
 
@@ -32,47 +32,32 @@
 03  Post-Training for GUI Agents
 ```
 
+## ✍️ Blog
+
+- [My Blog](https://mp.weixin.qq.com/s/hcgKahtQRE2QqI6xplv2Rg)
+
 ## 🚀 Featured Projects
 
 | Project | Description | Status |
 | :--- | :--- | :---: |
 | [**FlashNote ⚡**](https://github.com/JOJOCrazy123/flashnote) | A lightweight app to capture ideas & todos instantly before they slip away. | Active |
-| **Repo-courier 📡** | Fast, broad-coverage discovery radar for any topic. | 🚧 Building |
+| **Repo-courier 📡** | A Fast, broad-coverage discovery radar for any topic. | 🚧 Building |
 
 ## 📊 GitHub at a Glance
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JOJOCrazy123&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=JOJOCrazy123&show_icons=true&hide_border=true&rank_icon=github&theme=default" />
-    <img height="165" alt="JOJOCrazy123 GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=JOJOCrazy123&show_icons=true&hide_border=true&rank_icon=github&theme=default" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JOJOCrazy123&layout=compact&hide_border=true&theme=github_dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JOJOCrazy123&layout=compact&hide_border=true&theme=default" />
-    <img height="165" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JOJOCrazy123&layout=compact&hide_border=true&theme=default" />
-  </picture>
+  <img height="180" alt="JOJOCrazy123 GitHub statistics" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JOJOCrazy123&theme=github" />
+  <img height="180" alt="Most used languages" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JOJOCrazy123&theme=github" />
 </div>
 
-## 🐍 Contribution Snake
+## ⚡ Contributions
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="JOJOCrazy123 GitHub contribution snake animation"
-    src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake.svg"
-  />
-</picture>
+<img
+  alt="JOJOCrazy123 black tech contribution animation"
+  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg"
+/>
 
----
+## 📫 Contact
 
-<div align="center">
-  <sub>Stay curious. Keep building. Let agents do the rest. 🤖</sub>
-</div>
+- **Email:** [hc_qiu2024@163.com](mailto:hc_qiu2024@163.com)
+- **WeChat:** `Auther_Js`
