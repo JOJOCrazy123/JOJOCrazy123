@@ -17,6 +17,9 @@ jobs:
     timeout-minutes: 10
 
     steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
       - name: Generate contribution snake SVG
         uses: Platane/snk/svg-only@v3
         with:
