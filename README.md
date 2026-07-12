@@ -20,7 +20,7 @@
 ## 👨‍💻 whoami
 
 - 🎓 **SE** @ Southeast University · School of Software
-- 💼 **AI Agent R&D Intern** @ Alibaba
+- 💼 **AI Agent R&D Intern** @ Alibaba Taobao Group
 
 ## 🔬 Research Interests
 
