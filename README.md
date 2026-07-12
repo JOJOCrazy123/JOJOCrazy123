@@ -6,8 +6,6 @@
   width="760"
 />
 
-### Software Engineering Student · AI Agent R&D Engineer Intern
-
 <p>
   <a href="https://github.com/JOJOCrazy123">
     <img src="https://komarev.com/ghpvc/?username=JOJOCrazy123&label=Profile%20Views&color=0969da&style=flat" alt="JOJOCrazy123 profile views" />
@@ -19,10 +17,10 @@
 
 </div>
 
-## 👨‍💻 `> whoami`
+## 👨‍💻 whoami
 
-- 🎓 Studying **Software Engineering** at the **School of Software, Southeast University**
-- 💼 AI Agent R&D Engineer Intern at **Alibaba Taobao & Tmall Group**
+- 🎓 **SE** @ Southeast University · School of Software
+- 💼 **AI Agent R&D Intern** @ Alibaba
 
 ## 🔬 Research Interests
 
@@ -34,26 +32,26 @@
 
 ## ✍️ Blog
 
-- [My Blog](https://mp.weixin.qq.com/s/hcgKahtQRE2QqI6xplv2Rg)
+- [《Datawhale🐳：万字综述 Prompt 到 Loop 进化》](https://mp.weixin.qq.com/s/hcgKahtQRE2QqI6xplv2Rg)
 
-## 🚀 Featured Projects
+## 🚀 Projects
 
 | Project | Description | Status |
 | :--- | :--- | :---: |
 | [**FlashNote ⚡**](https://github.com/JOJOCrazy123/flashnote) | A lightweight app to capture ideas & todos instantly before they slip away. | Active |
 | **Repo-courier 📡** | A Fast, broad-coverage discovery radar for any topic. | 🚧 Building |
 
-## 📊 GitHub at a Glance
+## 📊 Stats
 
 <div align="center">
   <img height="180" alt="JOJOCrazy123 GitHub statistics" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JOJOCrazy123&theme=github" />
   <img height="180" alt="Most used languages" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JOJOCrazy123&theme=github" />
 </div>
 
-## ⚡ Contributions
+## 🧠 Contributions
 
 <img
-  alt="JOJOCrazy123 black tech contribution animation"
+  alt="JOJOCrazy123 growing purple contribution animation"
   src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg"
 />
 

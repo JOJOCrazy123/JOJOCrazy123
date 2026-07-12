@@ -24,6 +24,9 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake-tech.svg?color_snake=#5b21b6&color_dots=#0d1117,#0e4429,#006d32,#26a641,#39d353
 
+      - name: Make the snake grow after every contribution
+        run: node scripts/make-snake-grow.mjs dist/github-contribution-grid-snake-tech.svg
+
       - name: Publish SVG files to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
