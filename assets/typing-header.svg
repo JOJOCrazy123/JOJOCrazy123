@@ -1,23 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="96" viewBox="0 0 760 96" role="img" aria-labelledby="title description">
   <title id="title">Hi there, I'm Hanchen Qiu</title>
-  <desc id="description">A bold blue typewriter animation on a white background.</desc>
+  <desc id="description">A centered bright blue typewriter animation on a white background.</desc>
 
-  <rect width="760" height="96" rx="16" fill="#ffffff" />
-  <rect x="1" y="1" width="758" height="94" rx="15" fill="none" stroke="#d0d7de" stroke-width="2" />
+  <rect width="760" height="96" fill="#ffffff" />
 
   <defs>
-    <filter id="blue-glow" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
     <clipPath id="typing-mask">
-      <rect x="52" y="20" width="0" height="60">
+      <rect x="80" y="20" width="0" height="60">
         <animate
           attributeName="width"
-          values="0;656;656;0;0"
+          values="0;600;600;0;0"
           keyTimes="0;0.56;0.76;0.94;1"
           dur="6s"
           repeatCount="indefinite"
@@ -28,21 +20,21 @@
 
   <g clip-path="url(#typing-mask)">
     <text
-      x="52"
+      x="380"
       y="61"
-      fill="#0969da"
+      fill="#218bff"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
       font-size="34"
-      font-weight="800"
+      font-weight="400"
       letter-spacing="0.2"
-      filter="url(#blue-glow)"
+      text-anchor="middle"
     >Hi there, I'm Hanchen Qiu 👋</text>
   </g>
 
-  <rect x="52" y="26" width="4" height="44" rx="2" fill="#0969da">
+  <rect x="80" y="26" width="3" height="44" rx="1.5" fill="#218bff">
     <animate
       attributeName="x"
-      values="52;708;708;52;52"
+      values="80;680;680;80;80"
       keyTimes="0;0.56;0.76;0.94;1"
       dur="6s"
       repeatCount="indefinite"
