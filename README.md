@@ -44,8 +44,8 @@
 ## 📊 Stats
 
 <div align="center">
-  <img height="180" alt="JOJOCrazy123 GitHub statistics" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JOJOCrazy123&theme=github" />
-  <img height="180" alt="Most used languages" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JOJOCrazy123&theme=github" />
+  <img height="180" alt="JOJOCrazy123 GitHub statistics" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/github-stats.svg" />
+  <img height="180" alt="Most used languages" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/top-languages.svg" />
 </div>
 
 ## 🧠 Contributions
