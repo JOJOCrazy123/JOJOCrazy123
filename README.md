@@ -44,8 +44,8 @@
 ## 📊 Stats
 
 <div align="center">
-  <img width="49%" alt="Statistics" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/github-stats.svg" />
-  <img width="49%" alt="Languages" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/top-languages.svg" />
+  <img width="49%" alt="Statistics" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/github-stats.svg?v=2" />
+  <img width="49%" alt="Languages" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/top-languages.svg?v=2" />
 </div>
 
 ## 🧠 Contributions
