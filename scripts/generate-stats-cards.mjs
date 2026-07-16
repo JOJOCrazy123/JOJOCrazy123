@@ -60,7 +60,7 @@ function statsCard(profile, repositories) {
     return `  <text class="label" x="${x}" y="${y}">${escapeXml(label)}</text>
   <text class="value" x="${x}" y="${y + 23}">${escapeXml(formatNumber(value))}</text>`;
   }).join("\n");
-  return frame(`  <text class="title" x="24" y="34">${escapeXml(username)} GitHub statistics</text>\n${rows}`);
+  return frame(`  <text class="title" x="24" y="34">Statistics</text>\n${rows}`);
 }
 
 const languageColors = {
@@ -91,7 +91,7 @@ function languagesCard(languageBytes) {
     return `  <circle cx="${x + 5}" cy="${y - 4}" r="5" fill="${color}"/>
   <text class="label" x="${x + 17}" y="${y}">${escapeXml(language)} ${percentage}%</text>`;
   }).join("\n");
-  return frame(`  <text class="title" x="24" y="34">Most used languages</text>
+  return frame(`  <text class="title" x="24" y="34">Languages</text>
   <clipPath id="bar"><rect x="24" y="51" width="432" height="8" rx="4"/></clipPath>
   <g clip-path="url(#bar)">
   ${segments}
