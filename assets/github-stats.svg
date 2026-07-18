@@ -7,7 +7,7 @@
   <rect x="0.5" y="0.5" width="479" height="179" rx="6" fill="#fff" stroke="#d0d7de"/>
   <text class="title" x="24" y="34">Statistics</text>
   <text class="label" x="28" y="72">Public repositories</text>
-  <text class="value" x="28" y="95">5</text>
+  <text class="value" x="28" y="95">6</text>
   <text class="label" x="254" y="72">Total stars</text>
   <text class="value" x="254" y="95">10</text>
   <text class="label" x="28" y="132">Followers</text>
