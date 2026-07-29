@@ -39,7 +39,7 @@
 | Project | Description | Status |
 | :--- | :--- | :---: |
 | [**FlashNote ⚡**](https://github.com/JOJOCrazy123/flashnote) | A lightweight app to capture ideas & todos instantly before they slip away. | 🚧 Building |
-| [**Repo-courier 📡**](https://github.com/jjyaoao/repo-courier) | A Fast, broad-coverage discovery radar for any topic. | 🚧 Building |
+| [**omni-info-radar 📡**](https://github.com/jjyaoao/omni-info-radar) | A Flash, Omni info discovery radar for any topic with zero-cost. | 🚧 Building |
 
 ## 📊 Stats
 
