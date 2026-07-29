@@ -25,7 +25,7 @@ jobs:
         with:
           github_user_name: JOJOCrazy123
           outputs: |
-            dist/github-contribution-grid-snake-tech.svg?color_snake=#5b21b6&color_dots=#0d1117,#0e4429,#006d32,#26a641,#39d353
+            dist/github-contribution-grid-snake-tech.svg?color_snake=#8b008b&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
 
       - name: Make the snake grow after every contribution
         run: node scripts/make-snake-grow.mjs dist/github-contribution-grid-snake-tech.svg

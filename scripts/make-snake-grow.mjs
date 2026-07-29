@@ -60,6 +60,9 @@ const growthSegments = eatenAt
   .join("");
 
 const growingSvg = svg
+  .replace(/<svg\b[^>]*>/, (openingTag) => {
+    return `${openingTag}<rect x="-100%" y="-100%" width="300%" height="300%" fill="#ffffff"/>`;
+  })
   .replace("</style>", `${growthStyles}</style>`)
   .replace("</svg>", `${growthSegments}</svg>`);
 

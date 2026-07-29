@@ -51,8 +51,8 @@
 ## 🧠 Contributions
 
 <img
-  alt="JOJOCrazy123 growing purple contribution animation"
-  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg"
+  alt="JOJOCrazy123 contribution snake on a white GitHub-style activity grid"
+  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg?v=light"
 />
 
 ## 📫 Contact
