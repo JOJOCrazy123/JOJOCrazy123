@@ -39,7 +39,7 @@
 | Project | Description | Status |
 | :--- | :--- | :---: |
 | [**FlashNote ⚡**](https://github.com/JOJOCrazy123/flashnote) | A lightweight app to capture ideas & todos instantly before they slip away. | 🚧 Building |
-| [**Omni-Info-Radar 📡**](https://github.com/jjyaoao/omni-info-radar) | A Flash, Omni info discovery radar for any topic with zero-cost. | 🚧 Building |
+| [**Omni-Info-Radar 📡**](https://github.com/datawhalechina/omni-info-radar) | A Flash, Omni info discovery radar for any topic with zero-cost. | 🚧 Building |
 
 ## 📊 Stats
 
