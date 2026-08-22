@@ -44,15 +44,15 @@
 ## 📊 Stats
 
 <div align="center">
-  <img width="49%" alt="Statistics" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/github-stats.svg?v=2" />
-  <img width="49%" alt="Languages" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/top-languages.svg?v=2" />
+  <img width="49%" alt="Statistics" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/github-stats.svg?v=3" />
+  <img width="49%" alt="Languages" src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/main/assets/top-languages.svg?v=3" />
 </div>
 
 ## 🧠 Contributions
 
 <img
-  alt="JOJOCrazy123 contribution snake on a white GitHub-style activity grid"
-  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg?v=light"
+  alt="JOJOCrazy123 contribution snake crossing a forest-themed GitHub activity grid"
+  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg?v=forest"
 />
 
 ## 📫 Contact

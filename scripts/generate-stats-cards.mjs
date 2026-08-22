@@ -3,6 +3,12 @@ import { mkdir, writeFile } from "node:fs/promises";
 const username = process.env.GITHUB_USERNAME || "JOJOCrazy123";
 const token = process.env.GITHUB_TOKEN;
 const outputDirectory = process.argv[2] || "assets";
+const includedRepositoryNames = (
+  process.env.INCLUDED_REPOSITORIES || "datawhalechina/omni-info-radar"
+)
+  .split(",")
+  .map((name) => name.trim())
+  .filter(Boolean);
 
 const headers = {
   Accept: "application/vnd.github+json",
@@ -101,6 +107,23 @@ ${rows}`);
 
 const profile = await github(`/users/${encodeURIComponent(username)}`);
 const repositories = await github(`/users/${encodeURIComponent(username)}/repos?per_page=100&type=owner&sort=updated`);
+const includedRepositories = await Promise.all(
+  includedRepositoryNames.map((name) => {
+    const [owner, repository, ...extra] = name.split("/");
+    if (!owner || !repository || extra.length) {
+      throw new Error(`Invalid included repository name: ${name}`);
+    }
+    return github(`/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repository)}`);
+  }),
+);
+const countedRepositories = [
+  ...new Map(
+    [...repositories, ...includedRepositories].map((repository) => [
+      repository.full_name.toLowerCase(),
+      repository,
+    ]),
+  ).values(),
+];
 const sourceRepositories = repositories.filter((repository) => !repository.fork);
 const languageResults = await Promise.all(
   sourceRepositories.map((repository) => github(`/repos/${repository.full_name}/languages`)),
@@ -114,7 +137,9 @@ const languageBytes = languageResults.reduce((totals, result) => {
 
 await mkdir(outputDirectory, { recursive: true });
 await Promise.all([
-  writeFile(`${outputDirectory}/github-stats.svg`, statsCard(profile, repositories)),
+  writeFile(`${outputDirectory}/github-stats.svg`, statsCard(profile, countedRepositories)),
   writeFile(`${outputDirectory}/top-languages.svg`, languagesCard(languageBytes)),
 ]);
-console.log(`Generated profile cards from ${repositories.length} public repositories`);
+console.log(
+  `Generated profile cards from ${countedRepositories.length} public repositories (${includedRepositories.length} explicitly included)`,
+);

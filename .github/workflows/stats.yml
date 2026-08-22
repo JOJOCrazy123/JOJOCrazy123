@@ -27,6 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: JOJOCrazy123
+          INCLUDED_REPOSITORIES: datawhalechina/omni-info-radar
         run: node scripts/generate-stats-cards.mjs assets
 
       - name: Commit refreshed cards
