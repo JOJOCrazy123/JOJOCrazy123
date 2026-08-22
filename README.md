@@ -51,8 +51,8 @@
 ## 🧠 Contributions
 
 <img
-  alt="JOJOCrazy123 contribution snake crossing a cyberpunk GitHub activity grid"
-  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg?v=cyberpunk"
+  alt="JOJOCrazy123 contribution snake in a Claude Code inspired terminal"
+  src="https://raw.githubusercontent.com/JOJOCrazy123/JOJOCrazy123/output/github-contribution-grid-snake-tech.svg?v=claude-code"
 />
 
 ## 📫 Contact

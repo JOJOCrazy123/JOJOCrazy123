@@ -74,24 +74,24 @@ const growthSegments = eatenAt
   })
   .join("");
 
-const cyberpunkScene = `<defs>
-<linearGradient id="cyber-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070916"/><stop offset=".55" stop-color="#11122b"/><stop offset="1" stop-color="#190b2e"/></linearGradient>
-<linearGradient id="neon-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00f5ff"/><stop offset=".5" stop-color="#7a5cff"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient>
-<pattern id="cyber-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#39d9ff" stroke-width=".45" opacity=".16"/><circle cx="0" cy="0" r="1" fill="#ff2bd6" opacity=".45"/></pattern>
-<filter id="neon-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+const claudeCodeScene = `<defs>
+<linearGradient id="claude-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#faf7f2"/><stop offset="1" stop-color="#eee6dc"/></linearGradient>
+<pattern id="paper-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#8f8177" stroke-width=".45" opacity=".1"/></pattern>
+<filter id="soft-shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="1" stdDeviation="1.3" flood-color="#5d5149" flood-opacity=".18"/></filter>
 </defs>
-<rect x="-15" y="-31" width="878" height="190" rx="12" fill="url(#cyber-bg)" stroke="url(#neon-line)" stroke-width="2"/>
-<rect x="-8" y="-9" width="852" height="120" rx="8" fill="#090b19" stroke="#00e5ff" stroke-opacity=".55"/>
-<rect x="-8" y="-9" width="852" height="120" rx="8" fill="url(#cyber-grid)"/>
-<path d="M-3 118h34v-10h18v10h24V99h12v19h38v-7h20v7h32V91h15v27h44v-13h17v13h35V96h13v22h49v-9h22v9h29v-24h17v24h38v-12h18v12h42v-20h15v20h40v-8h19v8h35v-27h14v27h40v-15h20v15h37" fill="#111832" stroke="#ff2bd6" stroke-width="1" opacity=".9"/>
-<path d="M-5 137h850M-5 146h850" stroke="url(#neon-line)" stroke-width="1" opacity=".7"/>
-<path d="M120 -22h110l8 8h86M362 -22h148l8 8h96M690 -22h112" fill="none" stroke="#00f5ff" stroke-width="1.2" opacity=".75"/><circle cx="120" cy="-22" r="2" fill="#ff2bd6"/><circle cx="362" cy="-22" r="2" fill="#ff2bd6"/><circle cx="690" cy="-22" r="2" fill="#ff2bd6"/>
-<g filter="url(#neon-glow)" aria-label="snake spawn portal"><path d="M-5 0v-15a13 13 0 0 1 26 0V0" fill="none" stroke="#00f5ff" stroke-width="3"/><path d="M0 0v-14a8 8 0 0 1 16 0V0" fill="#00f5ff" fill-opacity=".12" stroke="#ff2bd6" stroke-width="1.5"/><circle cx="8" cy="-14" r="2" fill="#fff"/></g>
-<g filter="url(#neon-glow)" aria-label="snake return portal"><path d="M51 0v-15a13 13 0 0 1 26 0V0" fill="none" stroke="#ff2bd6" stroke-width="3"/><path d="M56 0v-14a8 8 0 0 1 16 0V0" fill="#ff2bd6" fill-opacity=".12" stroke="#00f5ff" stroke-width="1.5"/><path d="M61 -14h6m-3-3 3 3-3 3" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+<rect x="-15" y="-31" width="878" height="190" rx="12" fill="url(#claude-bg)" stroke="#b9aa9e" stroke-width="1.5" filter="url(#soft-shadow)"/>
+<path d="M-15 -10h878" stroke="#cdbfb4"/>
+<text x="92" y="-17" fill="#6f6259" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7">~/contributions — claude</text>
+<rect x="-8" y="-7" width="852" height="119" rx="7" fill="#f6f1ea" stroke="#d3c7bd"/>
+<rect x="-8" y="-7" width="852" height="119" rx="7" fill="url(#paper-grid)"/>
+<path d="M-7 127h850" stroke="#cdbfb4"/><rect x="-7" y="132" width="850" height="19" rx="5" fill="#e6ddd3"/>
+<text x="5" y="145" fill="#5d5149" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7"><tspan fill="#d97757">❯</tspan> claude --trace-contributions <tspan fill="#8b7d73">· growing with every commit</tspan></text>
+<g aria-label="snake start prompt"><rect x="-7" y="-29" width="29" height="17" rx="5" fill="#2f2a27"/><text x="0" y="-17" fill="#f6f1ea" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700">❯_</text></g>
+<g aria-label="snake return prompt"><rect x="49" y="-29" width="31" height="17" rx="5" fill="#d97757"/><text x="57" y="-17" fill="#fffaf5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700">✓</text></g>`;
 
 const growingSvg = svg
   .replace(/<svg\b[^>]*>/, (openingTag) => {
-    return `${openingTag}<rect x="-100%" y="-100%" width="300%" height="300%" fill="#050611"/>${cyberpunkScene}`;
+    return `${openingTag}<rect x="-100%" y="-100%" width="300%" height="300%" fill="#f4eee7"/>${claudeCodeScene}`;
   })
   .replace("</style>", `${growthStyles}</style>`)
   .replace("</svg>", `${growthSegments}</svg>`);
