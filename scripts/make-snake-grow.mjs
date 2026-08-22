@@ -74,26 +74,24 @@ const growthSegments = eatenAt
   })
   .join("");
 
-const forestScene = `<defs>
-<linearGradient id="forest-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4fbf1"/><stop offset="1" stop-color="#e5f4df"/></linearGradient>
-<pattern id="forest-leaves" width="48" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="9" r="5" fill="#86c76f"/><circle cx="15" cy="6" r="6" fill="#5eae58"/><circle cx="23" cy="10" r="5" fill="#3f9149"/><path d="M15 11v5" stroke="#7b5a3a" stroke-width="2"/></pattern>
-<filter id="forest-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#214d2d" flood-opacity=".25"/></filter>
+const cyberpunkScene = `<defs>
+<linearGradient id="cyber-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070916"/><stop offset=".55" stop-color="#11122b"/><stop offset="1" stop-color="#190b2e"/></linearGradient>
+<linearGradient id="neon-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00f5ff"/><stop offset=".5" stop-color="#7a5cff"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient>
+<pattern id="cyber-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#39d9ff" stroke-width=".45" opacity=".16"/><circle cx="0" cy="0" r="1" fill="#ff2bd6" opacity=".45"/></pattern>
+<filter id="neon-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
-<rect x="-15" y="-31" width="878" height="190" rx="14" fill="url(#forest-bg)" stroke="#397847" stroke-width="2"/>
-<rect x="-8" y="-9" width="852" height="120" rx="10" fill="#ffffff" fill-opacity=".72" stroke="#9ac78f" stroke-dasharray="3 4"/>
-<path d="M-5 122H845" stroke="#bbd8a7" stroke-width="18" stroke-linecap="round" opacity=".55"/>
-<path d="M-5 122H845" stroke="url(#forest-leaves)" stroke-width="12" stroke-dasharray="2 10" opacity=".9"/>
-<g fill="url(#forest-leaves)"><rect x="-8" y="-27" width="852" height="12"/><rect x="-8" y="144" width="852" height="12"/></g>
-<g filter="url(#forest-shadow)" aria-label="snake start">
-  <path d="M-8 -13L8 -27l16 14v13H-8z" fill="#d99a52" stroke="#6d4528"/><path d="M-11 -13L8 -30l19 17" fill="none" stroke="#3f7f48" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="-10" width="9" height="10" rx="2" fill="#714326"/><circle cx="9" cy="-5" r="1" fill="#f6d365"/>
-</g>
-<g filter="url(#forest-shadow)" aria-label="snake home">
-  <path d="M47 -13l17 -14 17 14V0H47z" fill="#efb65d" stroke="#6d4528"/><path d="M44 -13l20 -17 20 17" fill="none" stroke="#397847" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="59" y="-10" width="10" height="10" rx="5" fill="#714326"/><path d="M73 -22v-7h6v12" fill="#a85b43" stroke="#6d4528"/>
-</g>`;
+<rect x="-15" y="-31" width="878" height="190" rx="12" fill="url(#cyber-bg)" stroke="url(#neon-line)" stroke-width="2"/>
+<rect x="-8" y="-9" width="852" height="120" rx="8" fill="#090b19" stroke="#00e5ff" stroke-opacity=".55"/>
+<rect x="-8" y="-9" width="852" height="120" rx="8" fill="url(#cyber-grid)"/>
+<path d="M-3 118h34v-10h18v10h24V99h12v19h38v-7h20v7h32V91h15v27h44v-13h17v13h35V96h13v22h49v-9h22v9h29v-24h17v24h38v-12h18v12h42v-20h15v20h40v-8h19v8h35v-27h14v27h40v-15h20v15h37" fill="#111832" stroke="#ff2bd6" stroke-width="1" opacity=".9"/>
+<path d="M-5 137h850M-5 146h850" stroke="url(#neon-line)" stroke-width="1" opacity=".7"/>
+<path d="M120 -22h110l8 8h86M362 -22h148l8 8h96M690 -22h112" fill="none" stroke="#00f5ff" stroke-width="1.2" opacity=".75"/><circle cx="120" cy="-22" r="2" fill="#ff2bd6"/><circle cx="362" cy="-22" r="2" fill="#ff2bd6"/><circle cx="690" cy="-22" r="2" fill="#ff2bd6"/>
+<g filter="url(#neon-glow)" aria-label="snake spawn portal"><path d="M-5 0v-15a13 13 0 0 1 26 0V0" fill="none" stroke="#00f5ff" stroke-width="3"/><path d="M0 0v-14a8 8 0 0 1 16 0V0" fill="#00f5ff" fill-opacity=".12" stroke="#ff2bd6" stroke-width="1.5"/><circle cx="8" cy="-14" r="2" fill="#fff"/></g>
+<g filter="url(#neon-glow)" aria-label="snake return portal"><path d="M51 0v-15a13 13 0 0 1 26 0V0" fill="none" stroke="#ff2bd6" stroke-width="3"/><path d="M56 0v-14a8 8 0 0 1 16 0V0" fill="#ff2bd6" fill-opacity=".12" stroke="#00f5ff" stroke-width="1.5"/><path d="M61 -14h6m-3-3 3 3-3 3" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></g>`;
 
 const growingSvg = svg
   .replace(/<svg\b[^>]*>/, (openingTag) => {
-    return `${openingTag}<rect x="-100%" y="-100%" width="300%" height="300%" fill="#fbfdf8"/>${forestScene}`;
+    return `${openingTag}<rect x="-100%" y="-100%" width="300%" height="300%" fill="#050611"/>${cyberpunkScene}`;
   })
   .replace("</style>", `${growthStyles}</style>`)
   .replace("</svg>", `${growthSegments}</svg>`);
